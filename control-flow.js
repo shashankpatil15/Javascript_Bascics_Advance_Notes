@@ -110,3 +110,32 @@ if(marks >=90 && marks <=100){
         default:
             console.log("Number is not 1, 2 or 3");
     }
+
+// Turnery operator
+
+var studentDetails = {
+    name:"John",
+    age:21,
+    isActive:true,
+    totalMarks:50,
+    performance:''
+}
+console.log("Student Details Object:", studentDetails);
+var totalMarks = studentDetails.totalMarks;
+
+if(totalMarks > 400){
+    console.log("Excellent");
+}else if(totalMarks > 300){
+    console.log("Good");
+}else if(totalMarks > 200){
+    console.log("Average");
+}else {
+    console.log("Poor");
+}
+
+// var result = condition ? true : false;
+
+var result = (totalMarks > 400) ? "Excellent" :
+                (totalMarks > 300) ? "Good" :
+                (totalMarks > 200) ? "Average" : "Poor";
+console.log("Result using Turnery operator:", result);
