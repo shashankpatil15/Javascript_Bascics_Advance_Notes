@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="while.js"></script>
+    <!-- <script src="while.js"></script> -->
 </head>
 <body>
     <h1>Javascript Demos!!!!</h1>
-    
+    <p id="displayed"></p>
+    <script>
+        (function(){
+            var Message = "Hello, welcome to Javascript Basics and Advance Notes";
+            document.getElementById("displayed").innerHTML = Message;
+            console.log(Message);
+        }());
+    </script>
 </body>
 </html>
